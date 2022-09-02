@@ -8,7 +8,12 @@ public class sept1 {
 		for (int a = 1; a <= 10; a = a+1) {
 			System.out.println(a);
 		}
-
+    
+		int x = 1;
+		while ( x <=10) {
+			System.out.println(x);// 
+			x = x+1;
+		}
 	}
 
 }
