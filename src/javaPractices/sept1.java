@@ -14,6 +14,13 @@ public class sept1 {
 			System.out.println(x);// 
 			x = x+1;
 		}
+		
+		int w = 1;
+		do {
+			System.out.println(w);
+			w++;
+		}
+		while (w <= 10);
 	}
 
 }
