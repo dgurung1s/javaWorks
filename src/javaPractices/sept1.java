@@ -21,6 +21,8 @@ public class sept1 {
 			w++;
 		}
 		while (w <= 10);
+		
+		System.out.println("End of the application");
 	}
 
 }
