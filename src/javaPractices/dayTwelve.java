@@ -42,6 +42,7 @@ public class dayTwelve {
 		String [] result = v.split(",");
 		System.out.println(result[0]);
 		System.out.println(result[1]);
+		System.out.println(result.length);
 		
 		System.out.println(v.indexOf("p"));
 		
