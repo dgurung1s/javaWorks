@@ -1,7 +1,7 @@
 package javaPractices;
 
 class Bankaccount {    
-	int accountNumber;   //these are properties of class-Bankaccount
+	int accountNumber;   //these are fields/properties of class-Bankaccount
 	String accountName;
 	int balance;
 	String phonenumber;
