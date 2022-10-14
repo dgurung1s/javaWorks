@@ -44,6 +44,9 @@ public class FirstTry {
 		Thread.sleep(5000);
 		driver.close();
 		
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.findElement(By.partialLinkText("Forgot your password? ")).click();
+		
 		}
 
 }
