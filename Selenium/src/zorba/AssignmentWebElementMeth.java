@@ -53,6 +53,20 @@ public class AssignmentWebElementMeth {
 		boolean dropDownOption1 = driver.findElement(By.xpath("//option[@value=\'price:asc\']")).isSelected();
 		System.out.println(dropDownOption1);
 		
+		
+		driver.get("http://automationpractice.com/index.php");
+		
+		//getSize()
+		System.out.println(driver.findElement(By.id("homepage-slider")).getSize());
+		
+		//getLocation()
+		System.out.println(driver.findElement(By.id("homepage-slider")).getLocation());
+		
+		//getCssValue()
+		String cartColor = driver.findElement(By.className("shopping_cart")).getCssValue("color");
+		System.out.println(cartColor);
+		
+		driver.close();
 	}
 
 }
