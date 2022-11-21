@@ -114,13 +114,13 @@ public class dayFive {
 		System.out.println(sum);
 		
 		// sum of natural numbers from 1-10
-		
+		System.out.println("natural numebrs");
 		int sumA = 0;
 		for(int d=1 ; d <=10 ; d++) {
 			sumA = sum + d;
 		}
 		System.out.println(sumA);
-		
+		System.out.println("even");
 		//display even numbers from 1-100
 		
 		for(int k=2 ; k<=80 ; k+=4) {

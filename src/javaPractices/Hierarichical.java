@@ -16,11 +16,11 @@ class Daughter extends Father1{
 	String daughterFirstName;
 	
 	Daughter(String firstName, String lastName, String daughterFirstName){
-		super(firstName, lastName);
+		super(firstName,lastName);
 		this.daughterFirstName = daughterFirstName;	
 	}
 	public void displayName(String greet) {
-		System.out.println(greet +" "+ this.daughterFirstName +" " + this.lastName);	
+		System.out.println(greet +" "+ this.daughterFirstName +" "+this.firstName+" " + this.lastName);	
 	}
 }
 class Son1 extends Father1{

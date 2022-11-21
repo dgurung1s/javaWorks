@@ -138,7 +138,7 @@ public class day11String {
 	   
 	
 		for(int i = 0 ; i < 4;i++) {
-			rev2 = str22.charAt(i) + rev2 ; 
+			rev2 = str22.charAt(i) + rev2 ; //this is hard code. Better to do like Str23
 		} 
 		System.out.println(rev2); 
 	   

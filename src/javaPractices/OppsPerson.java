@@ -14,14 +14,6 @@ class Person2 {
 		this.height = hi;	
 	}
 	
-	public static void talk() {
-		System.out.println("Hello");
-	}
-	
-	public static void Sleep() {
-		System.out.println("Good Night");
-	}
-	
 	
 }
 	public class OppsPerson {
@@ -33,6 +25,7 @@ class Person2 {
 		System.out.println(raj.age);
 		System.out.println(raj.weight);
 		System.out.println(raj.height);
+		
 		
 		Person2 sarita = new Person2(22,45,6);
 		System.out.println(sarita.age);

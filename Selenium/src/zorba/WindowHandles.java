@@ -25,8 +25,8 @@ public class WindowHandles {
 		String secondTab = it.next();
 		driver.switchTo().window(secondTab);
 		
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("chinmay");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("deshpande");
+		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Dona");
+		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("Gurung");
 	
 		driver.switchTo().window(parentTab);
 		System.out.println(driver.getTitle());

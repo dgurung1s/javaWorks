@@ -29,6 +29,7 @@ public class SeleniumDay3 {
 		//getPageSource()
 		//driver.getPageSource();  //------or write like below by assigning to variables
 		String pageSource = driver.getPageSource();
+		//System.out.println(pageSource);
 		
 		//navigate()
 		driver.navigate().to("https://webdriveruniversity.com/");

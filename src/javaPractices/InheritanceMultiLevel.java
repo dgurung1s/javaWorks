@@ -46,11 +46,11 @@ public class InheritanceMultiLevel {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//GrandFather george = new GrandFather ("George", "Smith");
-		//george.displayName();
+		GrandFather george = new GrandFather ("George", "Smith");
+		george.displayName();
 		
-		//Father charles = new Father("George", "Smith", "Charles");
-		//charles.displayName();
+		Father charles = new Father("George", "Smith", "Charles");
+		charles.displayName();
 		
 		Son henry = new Son("George", "Smith","Charles", "Henry");
 		henry.displayName();
