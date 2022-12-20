@@ -1,6 +1,9 @@
 package zorba;
 
 import java.time.Duration;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,31 +19,34 @@ public class AssignmentNov {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shoot\\OneDrive\\Desktop\\javaworks\\selenium-resources\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver(); 
-		
+		WebDriver driver = new ChromeDriver();
+		UUID uuid = UUID.randomUUID();
+		String username = uuid +"@gmail.com";
 		//Automation for registration
 		driver.get("https://qatest.commentsoldrt.com/webstore-register?destination=/account");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("/html//input[@id='customer-first-name']")).sendKeys("Dona");
 		driver.findElement(By.id("customer-last-name")).sendKeys("Gurung");
-		driver.findElement(By.id("customer-email")).sendKeys("dona15@stevmark.com");
+		driver.findElement(By.id("customer-email")).sendKeys(username);
 		driver.findElement(By.id("customer-password")).sendKeys("Dona123!");
 		driver.findElement(By.className("ws-v2-button-primary")).click();
 		
-		
+		//Purchase with credit/coupon
 		//Automation for login
 		driver.get("https://qatest.commentsoldrt.com/webstore-login?destination=/account");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("email")).sendKeys("dona15@stevmark.com");
+		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys("Dona123!");
 		driver.findElement(By.className("ws-v2-button-primary")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		//Confirm
-		WebElement a1 = driver.findElement(By.id("pink-button"));
-		System.out.println(a1.getText());
-		driver.findElement(By.id("pink-button")).click();
-		
+		List<WebElement> pinkButtons = driver.findElements(By.id("pink-button"));
+		if (pinkButtons.size()>0) {
+			WebElement a1 = driver.findElement(By.id("pink-button"));
+			System.out.println(a1.getText());
+			driver.findElement(By.id("pink-button")).click();
+		}
 		//Adding to cart
 		driver.findElement(By.linkText("Shop")).click();
 		driver.findElement(By.xpath("//button[contains(@aria-label, 'close')]")).click();
@@ -72,7 +78,7 @@ public class AssignmentNov {
 		driver.findElement(By.name("postal")).sendKeys("63701");
 		driver.switchTo().parentFrame();
 		driver.findElement(By.id("stripe-button")).click();
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 		
 		//Add Coupon Code
 		driver.findElement(By.cssSelector("._right-column ._pill-button")).click();
@@ -93,9 +99,40 @@ public class AssignmentNov {
 		//Logout
 		driver.findElement(By.className("red")).click();
 		
+		//Purchase with credit
+		
+		//Automation for login
+		driver.get("https://qatest.commentsoldrt.com/webstore-login?destination=/account");
+		driver.manage().window().maximize();
+		driver.findElement(By.id("email")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys("Dona123!");
+		driver.findElement(By.className("ws-v2-button-primary")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
+		//Adding to cart
+		driver.findElement(By.linkText("Shop")).click();
+		//driver.findElement(By.xpath("//button[contains(@aria-label, 'close')]")).click();
+		driver.findElement(By.cssSelector("[data-testid='promo-grid-item'")).click();
+		driver.findElement(By.cssSelector("img[alt='Product: Rainbow Bright Skit Suit']")).click();
+		driver.findElement(By.xpath("//label[@for='8-Size-S']")).click();
+		driver.findElement(By.xpath("/html//div[@id='root']/div[@class='site-wrapper']/main/div//button[@type='submit']")).click();
+		driver.findElement(By.linkText("Checkout")).click();
+		
+		//Submit Payment
+		driver.findElement(By.className("_cta-button")).click();
+				
+		//Close and Continue
+		Thread.sleep(10000);
+		driver.findElement(By.className("webstore-checkout-btn")).click();
+
+		// Go to Account
+		driver.findElement(By.xpath("//a[contains(@aria-label, 'Account')]")).click();
+
+		// Logout
+		driver.findElement(By.className("red")).click();
+		
 		driver.quit();
 	}
 	
 	
-
-}
+	}

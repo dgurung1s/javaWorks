@@ -1,5 +1,9 @@
 package zorba;
 
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.UUID;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +16,8 @@ public class AssignmentWebElementMeth {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shoot\\OneDrive\\Desktop\\javaworks\\selenium-resources\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); 
-		
+		UUID uuid = UUID.randomUUID();
+		System.out.println(uuid);
 		//get()
 		driver.get("http://automationpractice.com/index.php");
 		

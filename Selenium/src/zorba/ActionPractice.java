@@ -1,6 +1,7 @@
 package zorba;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,6 +42,9 @@ public class ActionPractice {
 		WebElement d3 = driver.findElement(By.cssSelector(".dropbtn"));
 		a.moveToElement(d3).perform();
 		
+		//To open new tab
+		driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
+
 		
 		
 	}
