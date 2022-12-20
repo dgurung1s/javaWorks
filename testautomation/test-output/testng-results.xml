@@ -2,32 +2,118 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-19T21:34:15 CST" name="Suite" finished-at="2022-12-19T21:34:41 CST" duration-ms="26084">
+  <suite started-at="2022-12-20T00:12:20 CST" name="parameter" finished-at="2022-12-20T00:12:45 CST" duration-ms="25239">
     <groups>
     </groups>
-    <test started-at="2022-12-19T21:34:15 CST" name="Test" finished-at="2022-12-19T21:34:41 CST" duration-ms="26084">
-      <class name="testcase.TestOne">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.TestOne@78691363]" started-at="2022-12-19T21:34:15 CST" name="setUp" finished-at="2022-12-19T21:34:17 CST" duration-ms="2443" status="PASS">
+    <test started-at="2022-12-20T00:12:20 CST" name="parameter" finished-at="2022-12-20T00:12:45 CST" duration-ms="25239">
+      <class name="testcase.TestcaseParameter">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.TestcaseParameter@5fe94a96]" started-at="2022-12-20T00:12:20 CST" name="setUp" finished-at="2022-12-20T00:12:22 CST" duration-ms="1710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GetTitle()[pri:0, instance:testcase.TestOne@78691363]" started-at="2022-12-19T21:34:17 CST" name="GetTitle" finished-at="2022-12-19T21:34:20 CST" duration-ms="2726" status="PASS">
+        <test-method signature="GetTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.TestcaseParameter@5fe94a96]" started-at="2022-12-20T00:12:22 CST" name="GetTitle" finished-at="2022-12-20T00:12:25 CST" duration-ms="2651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#login-button]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#user-name]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#password]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetTitle -->
-        <test-method signature="countItems()[pri:0, instance:testcase.TestOne@78691363]" started-at="2022-12-19T21:34:20 CST" name="countItems" finished-at="2022-12-19T21:34:22 CST" duration-ms="2400" status="PASS">
+        <test-method signature="countItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.TestcaseParameter@5fe94a96]" started-at="2022-12-20T00:12:25 CST" name="countItems" finished-at="2022-12-20T00:12:27 CST" duration-ms="2416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#login-button]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[inventory_item_name]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#user-name]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[#password]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countItems -->
-        <test-method signature="logIn()[pri:0, instance:testcase.TestOne@78691363]" started-at="2022-12-19T21:34:22 CST" name="logIn" finished-at="2022-12-19T21:34:25 CST" duration-ms="2289" status="PASS">
+        <test-method signature="logIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.TestcaseParameter@5fe94a96]" started-at="2022-12-20T00:12:27 CST" name="logIn" finished-at="2022-12-20T00:12:29 CST" duration-ms="2223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[#login-button]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#user-name]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#password]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.TestOne@78691363]" started-at="2022-12-19T21:34:25 CST" name="tearDown" finished-at="2022-12-19T21:34:41 CST" duration-ms="16185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.TestcaseParameter@5fe94a96]" started-at="2022-12-20T00:12:29 CST" name="tearDown" finished-at="2022-12-20T00:12:45 CST" duration-ms="16190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcase.TestOne -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcase.TestcaseParameter -->
+    </test> <!-- parameter -->
+  </suite> <!-- parameter -->
 </testng-results>

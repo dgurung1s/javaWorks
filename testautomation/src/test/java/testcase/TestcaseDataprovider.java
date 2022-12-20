@@ -26,8 +26,7 @@ public class TestcaseDataprovider extends BaseTest {
 		System.out.println("The title is "+driver.getTitle());
 	}
 		
-	//Count Items
-	 
+	//Count Items 
 	@Test(dataProvider = "LoginCredentials")
 	public static void countItems(String username, String password) throws InterruptedException {
 		logIn(username,password);
