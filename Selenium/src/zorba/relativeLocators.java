@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
 
-public class Practice {
+public class relativeLocators {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub

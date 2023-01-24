@@ -3,8 +3,10 @@ package javaPractices;
 import java.util.List;
 
 public class RevisionSwapnilClass {
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		String name = "Dona";
 		System.out.println(name.substring(2));
 		System.out.println(name.substring(0, 3));
@@ -60,8 +62,19 @@ public class RevisionSwapnilClass {
         else {
         	System.out.println("It is not Palindrome.");
         }
+        
+        //Remove space
+        String myName = "Dona Gurung";
+        String replacedName = "";
+        for(int i = 0; i < myName.length(); i++) {
+        	if (myName.charAt(i) != ' ') {
+        		replacedName += myName.charAt(i);
+        	}
+        }
+        
+        System.out.println(replacedName);
         //count vowels
-        String str = "Welcome to java lAnguage";
+        String str = "Welcome to java Language";
         String lowerStr = str.toLowerCase();
         int countA = 0;
         int countE = 0;
@@ -85,12 +98,21 @@ public class RevisionSwapnilClass {
         		countU = countU + 1;
         	}
         }
+        	System.out.println("a = "+ countA);
+            System.out.println("e = "+ countE);
+            System.out.println("i = "+ countI);
+            System.out.println("o = "+ countO);
+            System.out.println("u = "+ countU);    
+            
+         //Delete Duplicate Characters
+       String str2 = "Welcome to java language world";
+       String duplicate = "" + str2.charAt(0);
        
-        System.out.println("a = "+ countA);
-        System.out.println("e = "+ countE);
-        System.out.println("i = "+ countI);
-        System.out.println("o = "+ countO);
-        System.out.println("u = "+ countU);
+       for(int i = 0; i < str2.length(); i++) {
+    	   if (!duplicate.contains(String.valueOf(str2.charAt(i))))
+    		  duplicate = duplicate + str2.charAt(i) ;
+       }
+       System.out.println(duplicate);
 	}
 }
 //To delete all the cookies 

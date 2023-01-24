@@ -51,7 +51,7 @@ public class AssignmentwithCoupons {
 		//Adding to cart
 		driver.findElement(By.linkText("Shop")).click();
 		driver.findElement(By.xpath("//button[contains(@aria-label, 'close')]")).click();
-		driver.findElement(By.cssSelector("[data-testid='promo-grid-item'")).click();
+		driver.findElement(By.cssSelector("[data-testid='promo-grid-item']")).click();
 		driver.findElement(By.linkText("Tie-Dye Socks")).click();
 		driver.findElement(By.xpath("//label[@for='4-Color-Blue']")).click();
 		driver.findElement(By.xpath("//button[contains(@aria-label, 'Increase quantity')]")).click();
